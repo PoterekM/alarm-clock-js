@@ -59,14 +59,17 @@ gulp.task("minifyScripts", ["jsBrowserify"], function() {
 //   return del(['build', 'tmp']);
 // });
 
-// gulp.task("build", ['clean', 'jshint'], function() {
-//   if (buildProduction) {
-//     gulp.start('minifyScripts');
-//   } else {
-//     gulp.start('jsBrowserify');
-//   }
-//   gulp.start('bower');
-// });
+gulp.task("build",
+// ['clean', 'jshint'],
+ function() {
+  if (buildProduction) {
+    gulp.start('minifyScripts');
+  } else {
+    gulp.start('jsBrowserify');
+  }
+  // gulp.start('bower');
+});
+
 
 gulp.task('serve', function() {
   browserSync.init({
