@@ -3,9 +3,11 @@ function AlarmClock(time) {
 }
 
 AlarmClock.prototype.isAlarmTime = function(time) {
-  var currentTime = moment();
-  if (currentTime === time) {
+  var currentTime = moment().minute();
+  if (currentTime === this.time) {
     return true;
+  } else {
+    return false;
   }
 };
 
