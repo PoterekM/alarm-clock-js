@@ -8,3 +8,5 @@ AlarmClock.prototype.isAlarmTime = function(time) {
     return true;
   };
 };
+
+exports.alarmClockModule = AlarmClock;
