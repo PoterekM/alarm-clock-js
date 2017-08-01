@@ -7,5 +7,5 @@ $(document).ready(function() {
     var newAlarmClock = new AlarmClock(time);
     // var output = newAlarmClock.isAlarmTime(time);
     $('#alarm').show();
-  })
-})
+  });
+});
