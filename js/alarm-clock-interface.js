@@ -9,6 +9,6 @@ $(document).ready(function() {
     var output = newAlarmClock.isAlarmTime(time);
     if (output) {
       $('#alarm').show();
-    };
+    }
   });
 });

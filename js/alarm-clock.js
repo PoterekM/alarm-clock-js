@@ -6,7 +6,7 @@ AlarmClock.prototype.isAlarmTime = function(time) {
   var currentTime = moment();
   if (currentTime === time) {
     return true;
-  };
+  }
 };
 
 exports.alarmClockModule = AlarmClock;
