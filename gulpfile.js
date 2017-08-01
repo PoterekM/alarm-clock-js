@@ -66,7 +66,7 @@ gulp.task("build",['clean', 'jshint'],
   } else {
     gulp.start('jsBrowserify');
   }
-  gulp.start('boer');
+  gulp.start('bower');
 });
 
 
